@@ -19,8 +19,6 @@ func GetConnection() *pgxpool.Pool {
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Unable to connect to database : %v\n", err.Error())
 		os.Exit(1)
-	} else {
-		fmt.Println("Successfully connect to database")
 	}
 
 	return dbpool
